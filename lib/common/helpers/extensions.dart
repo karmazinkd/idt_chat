@@ -7,6 +7,12 @@ extension FutureExt<T> on Future<T> {
       return Result<T>.success(data: await this);
     } on Exception catch (e, st) {
       return Result<T>.failed(message: e.toString(), exception: e, stackTrace: st);
+    } on Object catch (e, st) {
+      return Result<T>.failed(
+        message: e.toString(),
+        exception: Exception(e.toString()),
+        stackTrace: st,
+      );
     }
   }
 }

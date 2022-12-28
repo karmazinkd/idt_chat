@@ -1,0 +1,9 @@
+{
+  "appName": "IDT Chat",
+  "oopsSomethingWentWrong" : "Oops, something went wrong.\nPlease try again later",
+  "noChats" :"No chats yet. Start a new chat!",
+  "members" : "members",
+  "noMessages" : "No messages yet",
+  "typeAMessage" : "Type a message...",
+  "dummyResponse" : "OK, sounds good"
+}

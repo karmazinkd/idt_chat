@@ -157,8 +157,10 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   void sendMessage() {
-    cubit.sendMessage(textController.text);
-    textController.text = '';
+    if(textController.text.isNotEmpty) {
+      cubit.sendMessage(textController.text);
+      textController.text = '';
+    }
   }
 }
 
